@@ -8,7 +8,7 @@
     <body>
 
         <h1>SPAE</h1>
-        <h3 id="date">12-Jan-2019</h3>
+        <h3 id="date">12-01-2019</h3>
 
         <div class="content-1"> 
         <div>
@@ -19,7 +19,7 @@
         <div>
             <h2>Prediction</h2>
             <p id="p_temp">21 C</p>
-            <p id="p_weather">Rain - Istanbul</p>
+            <p id="weather">Rain - Istanbul</p>
         </div>
             
         </div>
@@ -61,22 +61,29 @@
         <script>
             eel.today();
             eel.weather();
+            eel.Prediction();
 
-            eel.expose(printTHIS)
+            eel.expose(printTHIS) // Date
             function printTHIS(message){
         	const greeting_div = document.getElementById("date")
             greeting_div.innerHTML = message
             }
             
-            eel.expose(printWeather)
+            eel.expose(printWeather) // Current Weather
             function printWeather(message){
         	const greeting_div = document.getElementById("weather")
             greeting_div.innerHTML = message
             }
 
-            eel.expose(printTemp)
+            eel.expose(printTemp) // Current temp
             function printTemp(message){
         	const greeting_div = document.getElementById("temp")
+            greeting_div.innerHTML = message
+            }
+
+            eel.expose(printPrediction) // Predicted Temp
+            function printPrediction(message){
+        	const greeting_div = document.getElementById("p_temp")
             greeting_div.innerHTML = message
             }
 
