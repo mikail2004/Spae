@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Spae</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='images/logo.png')}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body style="background-image: linear-gradient(to right, #3232BA, #8686FF);">
+
+        <div class='content-1'>
+            <h1>{{t}} C</h1>
+            <h2>{{w}}</h2>
+        </div>
+
+        <form name="form1" action="." method="post">
+            <input type="text" id="fname" name="test" value="Enter City Here"><br>
+        </form>
+
+        <h3>The temperature is predicted to change to {{n}} C over the next 5 days</h3>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1, h2, h3, p{
+            color: #fff;
+        }
+
+        .content-1{
+            margin-top: 150px;
+        }
+
+        h1{
+            font-size: 70px;
+        }
+
+        h2{
+            font-size: 27.5px;
+            margin-top: -50;
+        }
+
+        h3{
+            font-size: 15px;
+        }
+
+        input[type=text] {
+            margin-top: 100px;
+            border: none;
+            border-bottom: 2px solid #fff;
+            background: none;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+    </body>
+</html>
