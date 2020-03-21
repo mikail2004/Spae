@@ -1,2 +1,2 @@
 # Spae
-A python application that displays the current weather and temperature in Istanbul, and also calculates the weather for the next day using machine learning. This project uses polynomial models with numpy, matplotlib, and WeatherAPI.
+A web-app that displays the temperature and weather condition for any city; as well as the predicted temperature for the next 5 days. Made in Python using WeatherAPI, NumPy, Heroku, and Flask.
